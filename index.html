@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo Carta Gastos</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+    <div id="CartaGasto">
+        <h1 class="tituloDatosPaciente">DATOS DEL PACIENTE</h1>
+    <section>
+        <form action="">
+            <label class="pacienteId" for="">
+                <span></span>
+                <input type="text" class="pacienteId-input" name="" id="InputTiPaciente" list="tiUsers" placeholder="Tipo identificacion">
+                <datalist id="tiUsers">
+                    <option value="C.C."></option>
+                    <option value="T.I."></option>
+                    <option value="R.C."></option>
+                    <option value="P.E."></option>
+                    <option value="P.T."></option>
+                    <option value="C.E."></option>
+                    <option value="P.A."></option>
+                </datalist>
+                <input class="documentoN-input" type="text" name="" id="InputDocumento" placeholder="identificacion">
+                <!--<span><strong>Nombre</strong></span>-->
+                <input class="namePaciente-input" type="text" name="" id="InputNameUser" placeholder="Nombre completo">
+            </label>
+            <!--<label class="NamePaciente" for="">
+                <span></span>
+                <input class="namePaciente-input" type="text" name="" id="InputNameUser" placeholder="Nombre completo">
+            </label>-->
+            <section>
+                <h1 class="titulo2">DATOS DEL ACCIDENTE</h1>
+                <label class="fechaAccidente" for="">
+                    <div class="fechaAccidenteTitle"><span><strong>Fecha Ingreso</strong></span></div>
+                    <div class="fechaAccidenteDiv">
+                    <input class="fechaAccidente-diaInput" type="text" maxlength="2" name="dia" id="Inputdia" list="diaAT" placeholder="Día">
+                    <datalist id="diaAT">
+                        <option value="01"></option>
+                        <option value="03"></option>
+                        <option value="04"></option>
+                        <option value="05"></option>
+                        <option value="06"></option>
+                        <option value="07"></option>
+                        <option value="08"></option>
+                        <option value="09"></option>
+                        <option value="10"></option>
+                        <option value="11"></option>
+                        <option value="12"></option>
+                        <option value="13"></option>
+                        <option value="14"></option>
+                        <option value="15"></option>
+                        <option value="16"></option>
+                        <option value="17"></option>
+                        <option value="18"></option>
+                        <option value="19"></option>
+                        <option value="20"></option>
+                        <option value="21"></option>
+                        <option value="22"></option>
+                        <option value="23"></option>
+                        <option value="24"></option>
+                        <option value="25"></option>
+                        <option value="26"></option>
+                        <option value="27"></option>
+                        <option value="28"></option>
+                        <option value="29"></option>
+                        <option value="30"></option>
+                        <option value="31"></option>
+                    </datalist>
+                    <input type="text" class="mesAccidente" name="mes" maxlength="2" id="InputMes" list="mesAT" placeholder="Mes">
+                    <datalist id="mesAT">
+                        <option value="01"></option>
+                        <option value="02"></option>
+                        <option value="03"></option>
+                        <option value="04"></option>
+                        <option value="05"></option>
+                        <option value="06"></option>
+                        <option value="07"></option>
+                        <option value="08"></option>
+                        <option value="09"></option>
+                        <option value="10"></option>
+                        <option value="11"></option>
+                        <option value="12"></option>
+                    </datalist>
+                    <input type="text" class="AnnioAccidente" name="año" maxlength="4" id="InputAnnio" list="annioAT" placeholder="Año">
+                    <datalist id="annioAT">
+                        <option value="2015"></option>
+                        <option value="2016"></option>
+                        <option value="2017"></option>
+                        <option value="2018"></option>
+                        <option value="2019"></option>
+                        <option value="2020"></option>
+                        <option value="2021"></option>
+                        <option value="2022"></option>
+                        <option value="2023"></option>
+                    </datalist>
+                    <span class="externoCss"><strong>Externo</strong></span>
+                    <input class="respuestaId" id="ingresoInputAccidente2" list="respuesta">
+                    <datalist id="respuesta">
+                    <option value="SI"></option>
+                    <option value="NO"></option>
+                    </datalist>
+                </div>
+                </label>
+                <button class="btn" type="button" id="botonIngreso" onclick="mostrarFechaIngreso()">Validar fecha Siniestro</button>
+                <section class="container"></section>
+                <label class="aseguradoraID" for="">
+                    <span></span>
+                    <input type="text" class="soat" name="" id="InputAsegurador" list="Asegurador" placeholder="Aseguradora SOAT">
+                    <datalist id="Asegurador">
+                        <option value="LIBERTY SEGUROS S.A"></option>
+                        <option value="ADMINISTRADORA RECURSOS SGSSS (CONSORCIO SAYP)"></option>
+                        <option value="ASEGURADORA SOLIDARIA DE COLOMBIA"></option>
+                        <option value="AXA SEGUROS COLPATRIA S.A."></option>
+                        <option value="LA EQUIDAD SEGUROS GENERALES"></option>
+                        <option value="LA PREVISORA S A COMPAÑIA DE SEGUROS"></option>
+                        <option value="MAPFRE SEGUROS GENERALES DE COLOMBIA"></option>
+                        <option value="MUNDIAL SEGUROS"></option>
+                        <option value="SEGUROS COMERCIALES BOLIVAR S."></option>
+                        <option value="SEGUROS DEL ESTADO S.A."></option>
+                        <option value="SEGUROS GENERALES SURAMERICANA"></option>
+                        <option value="ZURICH COLOMBIA SEGUROS S.A."></option>
+                    </datalist>
+                </label>
+                <label class="gastoId" for="">
+                    <span></span>
+                    <input type="text" class="totalGasto" name="" maxlength="8" id="InputTotalGasto" placeholder="Total gasto">
+                </label>
+                <!--<span class="fechaAccidenteIngreso"><strong>Accidente tope ADRESS-SOAT cilindraje menor a 200cc</strong></span>-->
+                <button class="btn" type="button" id="botonTope" onclick="mostrarSegundoTope()">Validar topes</button>
+                <section class="container2"></section>
+            </section>
+            <section class="datosCarta">
+                <h1 class="datosFechaCarta">DATOS DE CARTA</h1>
+                <label class="fechaCarta" for="">
+                    <div class="fechaAccidenteTitleCard"><span><strong>Fecha expedición</strong></span></div>
+                    <div class="fechaAccidenteDatosCard">
+                    <input type="text" class="cartaDia" maxlength="2" name="" id="InputCartaDia" list="diaAT" placeholder="Día">
+                    <input type="text" class="cartaMes" id="InputCartaMes" maxlength="2" list="mesAT" placeholder="Mes">
+                    <input type="text" class="annioCarta" maxlength="4" id="InputCartaAnnio" list="annioAT" placeholder="Año">
+                    </div>
+                </label>
+                <label class="tiNota" for="tipoNotaId">
+                    <span></span>
+                    <input type="text" name="" id="motivo-Input" list="motivoInput" placeholder="Motivo de carta">
+                    <datalist id="motivoInput">
+                        <option value="Cercania"></option>
+                        <option value="Disponibilidad"></option>
+                        <option value="Oportunidad"></option>
+                        <option value="Tope (ambulatorio)"></option>
+                        <option value="Tope (Hospitalario)"></option>
+                        <option value="Otra"></option>
+                        <option value="Tramites"></option>
+                    </datalist>
+                    <input type="text" class="nameServicio-Input" name="" id="inputServicio" placeholder="Servicio">
+                </label>
+                <label class="cartaId" for="">
+                    <span></span>
+                    <input class="cartaId-input" type="text" name="" id="InputNota" spellcheck="value" placeholder="Nota de carta">
+                </label>
+                <label class="funcionario" for="">
+                    <span></span>
+                    <input class="funcionario-input" type="text" name="" id="InputFuncionario" list="funcionaro-Input" placeholder="Nombre Funcionario">
+                    <datalist id="funcionaro-Input">
+                        <option value="Molly"></option>
+                        <option value="Fernando"></option>
+                        <option value="Catalina"></option>
+                        <option value="Carolina"></option>
+                        <option value="Daniel"></option>
+                    </datalist>
+                </label>
+            </section>
+        </form>
+        <button type="button" onclick="onclickSumarNombre()">Añadir</button>
+    </section>
+    </div>
+    <header>
+        <section>
+            <figure>
+                <img class="logHeader" src="./imagenes/logoHeader.png" alt="">
+            </figure>
+        </section>
+    </header>
+    <main>
+        <section>
+            <p class="Parrafo1"><strong>LA CLINICA UNIVERSITARIA BOLIVARIANA, INSTITUCION SIN ANIMO DE LUCRO RESOLUCION 021/59</strong></p>
+        </section>
+        <section class="main-input-name">
+            <p id="ResultadoNombre"></p>
+        </section>
+        <section class="main-input-accidente">
+            <p id="ResultadoAccidente"></p>								                                                                
+        </section>
+        <section class="main-input-gastos">
+            <p><strong>TOTAL, GASTOS EN LA CLINICA BOLIVARIANA……………</strong></p>
+            <div>
+            <p id="ResultadoGasto"></p>
+            <p id="ResultadoGasto2"></p>
+        </div>
+        </section>
+        <section class="main-input-nota">
+            <strong><p id="ResultadoNota"></p>	</strong>											
+        </section>
+        <section class="main-input-ips"><strong>ESTA CARTA NO INCLUYE VALORES FACTURADOS EN OTRAS IPS.</strong> 																
+        </section>
+        <section class="main-input-carta"><P id="ResultadoCarta"></P>												
+        </section>
+        <section class="main-input-funcionario">
+            <section class="input.funcionaro">
+                <p id="ResultadoEmpleado"></p>
+                <p id="ResultadoCargo"></p>	
+                <p>Clinica Universitaria Bolivariana</p>							
+                <p id="ResultadoCorreo"></p>					
+                <p>Tel 4455900 ext. 1608 - 1609 - 1611</p>
+            </section>							
+        </section>
+    </main>
+    <footer>
+        <section>
+            <figure>
+                <img class="logFooter" src="./imagenes/logoFooter.png" alt="">
+            </figure>
+        </section>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="./usuario.js"></script>
+    <script src="./mesAccidente.js"></script>
+    <script src="./funciones.js"></script>
+</body>
+</html>

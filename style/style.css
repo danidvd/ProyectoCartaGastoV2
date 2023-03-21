@@ -57,6 +57,17 @@ main .main-input-accidente {
 
 main .main-input-gastos {
     width: 100%;
+    font-size: 2.5rem;
+    text-align: justify;
+    display: flex;
+}
+
+/*main .main-input-gastos p {
+    width: 300rem;
+}*/
+
+main .main-input-gastos2 {
+    width: 100%;
     margin-bottom: 35px;
     font-size: 2.5rem;
     text-align: justify;
@@ -165,7 +176,7 @@ button:hover {
 }
 
 .pacienteId .pacienteId-input{
-    width: 5%;
+    width: 6rem;
     height: auto;
 }
 

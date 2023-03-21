@@ -45,6 +45,7 @@ function onclickSumarNombre(){
     var gasto2 = gasto2Input.value;
     var gastoTotal2 = formatoMexico(gasto2);
     var gastoTotalReal = mostrarTopeCarta(gasto2)
+    var asegurador2 = mostrarTopeAsegurador(gasto2)
 
     // nota u observacion
 
@@ -86,13 +87,19 @@ function onclickSumarNombre(){
     ResultadoNombre.innerText = Parrafo1Final;
 
     var ResultadoAccidente = document.getElementById("ResultadoAccidente");
-    ResultadoAccidente.innerText = "Desde el momento del ingreso a la institución el día " + dia + " de " + mesInputAccidente + " " + annio + " ha generado gastos médicos a cargo de: " + asegurador;
+    ResultadoAccidente.innerText = "Desde el momento del ingreso a la institución el día " + dia + " de " + mesInputAccidente + " " + annio + " ha generado gastos médicos a cargo de: ";
+
+    var ResultadoAsegurador = document.getElementById("ResultadoAsegurador");
+    ResultadoAsegurador.innerText = asegurador;
 
     var ResultadoGasto = document.getElementById("ResultadoGasto");
-    ResultadoGasto.innerText = "$ " + gastoTotal;
+    ResultadoGasto.innerText = "…………… $ " + gastoTotal;
 
     var ResultadoGasto2 = document.getElementById("ResultadoGasto2");
     ResultadoGasto2.innerText = gastoTotalReal;
+
+    var ResultadoAdres = document.getElementById("ResultadoAdres");
+    ResultadoAdres.innerText = asegurador2;
 
     var ResultadoCarta = document.getElementById("ResultadoCarta");
     ResultadoCarta.innerText = "Esta constancia se realiza a solicitud del usuario y se firma en la ciudad de Medellín a los " + cartaDia + " días del mes de " + cartaMesAccidente + " de " + CartaAnnio;
@@ -157,7 +164,16 @@ function onclickSumarNombre(){
 
     function mostrarTopeCarta(valor){
         if(valor>0){
-            return "$ " + gastoTotal2;
+            return "…………… $ " + gastoTotal2;
+        }
+        if(valor<=0){
+            return "";
+        };
+    };
+
+    function mostrarTopeAsegurador(valor){
+        if(valor>0){
+            return "ADMINISTRADORA RECURSOS SGSSS (CONSORCIO SAYP)";
         }
         if(valor<=0){
             return "";

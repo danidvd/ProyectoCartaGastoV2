@@ -234,10 +234,6 @@ label{
     height: 2rem;
 }
 
-.fechaAccidente .container {
-    width: 100%;
-}
-
 .fechaAccidente .fechaAccidente-diaInput{
     width: 6rem;
     height: 2rem;
@@ -253,6 +249,24 @@ label{
     height: 2rem;
 }
 
+/* Fecha Ingreso*/
+
+.fechaIngreso {
+    display: flex;
+    width: 100%;
+}
+
+.fechaIngreso .fechaIngresoTitle{
+    width: 20%;
+}
+
+.fechaIngreso .fechaIngresoDiv{
+    width: 80%;
+    display: flex;
+}
+
+/* Asegurador */
+
 .aseguradoraID .soat{
     width: 50rem;
     height: auto;
@@ -261,6 +275,11 @@ label{
 /* Otros Ajustes */
 
 .gastoId .totalGasto{
+    width: 22rem;
+    height: auto;
+}
+
+.gastoIdTope2 .totalGasto2{
     width: 22rem;
     height: auto;
 }

@@ -36,7 +36,8 @@
             <section>
                 <h1 class="titulo2">DATOS DEL ACCIDENTE</h1>
                 <label class="fechaAccidente" for="">
-                    <div class="fechaAccidenteTitle"><span><strong>Fecha Ingreso</strong></span></div>
+                    <div class="fechaAccidenteTitle">
+                        <span><strong>Fecha Accidente</strong></span></div>
                     <div class="fechaAccidenteDiv">
                     <input class="fechaAccidente-diaInput" type="text" maxlength="2" name="dia" id="Inputdia" list="diaAT" placeholder="Día">
                     <datalist id="diaAT">
@@ -106,8 +107,20 @@
                     </datalist>
                 </div>
                 </label>
-                <button class="btn" type="button" id="botonIngreso" onclick="mostrarFechaIngreso()">Validar fecha Siniestro</button>
-                <section class="container"></section>
+                <!--<button class="btn" type="button" id="botonIngreso" onclick="mostrarFechaIngreso()">Validar fecha Siniestro</button>-->
+                <!--<section class="container">-->
+                <!--</section>-->
+                    <label class="fechaIngreso">
+                        <div class="fechaIngresoTitle">
+                            <span><strong>Fecha Ingreso</strong></span>
+                        </div>
+                        <div class="fechaIngresoDiv">
+                        <input type="text" class="cartaDiaIngreso2" maxlength="2" name="" id="InputCartaDia2" list="diaAT" placeholder="Día"style="width: 6rem">
+                        <input type="text" class="cartaMesIngreso2" id="InputCartaMes2" maxlength="2" list="mesAT" placeholder="Mes" style="width: 6rem">
+                        <input type="text" class="annioCartaIngreso2" maxlength="4" id="InputCartaAnnio2" list="annioAT" placeholder="Año" style="width: 8rem">
+                        </div>
+                        </label>
+                
                 <label class="aseguradoraID" for="">
                     <span></span>
                     <input type="text" class="soat" name="" id="InputAsegurador" list="Asegurador" placeholder="Aseguradora SOAT">
@@ -128,11 +141,15 @@
                 </label>
                 <label class="gastoId" for="">
                     <span></span>
-                    <input type="text" class="totalGasto" name="" maxlength="8" id="InputTotalGasto" placeholder="Total gasto">
+                    <input type="text" class="totalGasto" name="" maxlength="8" id="InputTotalGasto" placeholder="Total gasto N°1">
                 </label>
+                <label class="gastoIdTope2">
+                    <span></span>
+                    <input type="text" class="totalGasto2" name="" maxlength="8" id="InputTotalGastoDos" placeholder="Total gasto N°2" style="width: 22rem;height: auto;">
+                    </label>
                 <!--<span class="fechaAccidenteIngreso"><strong>Accidente tope ADRESS-SOAT cilindraje menor a 200cc</strong></span>-->
-                <button class="btn" type="button" id="botonTope" onclick="mostrarSegundoTope()">Validar topes</button>
-                <section class="container2"></section>
+                <!--<button class="btn" type="button" id="botonTope" onclick="mostrarSegundoTope()">Validar topes</button>
+                <section class="container2"></section>-->  
             </section>
             <section class="datosCarta">
                 <h1 class="datosFechaCarta">DATOS DE CARTA</h1>

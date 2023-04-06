@@ -84,10 +84,10 @@ function onclickSumarNombre(){
     // Se Muestran los cambios en la carta Parrafo1
 
     var ResultadoNombre = document.getElementById("ResultadoNombre");
-    ResultadoNombre.innerText = Parrafo1Final;
+    ResultadoNombre.innerText = "Certifica que " + NameUser  + " identificado con " + tipoIdentificacion + " " + documentoPacienteCompleto + " sufrio un accidente de tránsito el dia " + dia + " de " + mesInputAccidente + " " + annio +".";
 
     var ResultadoAccidente = document.getElementById("ResultadoAccidente");
-    ResultadoAccidente.innerText = "Desde el momento del ingreso a la institución el día " + dia + " de " + mesInputAccidente + " " + annio + " ha generado gastos médicos a cargo de: ";
+    ResultadoAccidente.innerText = Parrafo1Final;
 
     var ResultadoAsegurador = document.getElementById("ResultadoAsegurador");
     ResultadoAsegurador.innerText = asegurador;
@@ -154,11 +154,23 @@ function onclickSumarNombre(){
         var ingresoAnnioInput = document.getElementById("InputCartaAnnio2");
         var ingresoAnnio = ingresoAnnioInput.value;
 
+        // Fecha Accidente //
+
+        var diaInput = document.getElementById("Inputdia");
+        var dia = diaInput.value;
+    
+        var mesInput = document.getElementById("InputMes");
+        var mes = mesInput.value;
+        var mesInputAccidente = mostrarNombreMes(mes)
+    
+        var annioInput = document.getElementById("InputAnnio");
+        var annio = annioInput.value;
+
         if(respuesta===respuesta1){
-            return "Certifica que " + NameUser  + " identificado con " + tipoIdentificacion + " " + documentoPacienteCompleto + " ingresó a esta institución tras sufrir un accidente de tránsito, el día " + ingresoDia + " de "+ ingresoMesAccidente + " " +ingresoAnnio +".";
+            return "Desde el momento del ingreso a la institución el día " + ingresoDia + " de " + ingresoMesAccidente + " " + ingresoAnnio + " ha generado gastos médicos a cargo de: ";
         };
         if(respuesta===respuesta2){
-            return "Certifica que " + NameUser  + " identificado con " + tipoIdentificacion + " " + documentoPacienteCompleto + " ingresó a esta institución tras sufrir un accidente de tránsito.";
+            return "Desde el momento del ingreso a la institución el día " + dia + " de " + mesInputAccidente + " " + annio + " ha generado gastos médicos a cargo de: ";
         };
     };
 

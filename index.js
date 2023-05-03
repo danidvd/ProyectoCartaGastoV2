@@ -84,13 +84,13 @@ function onclickSumarNombre(){
     // Se Muestran los cambios en la carta Parrafo1
 
     var ResultadoNombre = document.getElementById("ResultadoNombre");
-    ResultadoNombre.innerText = "Certifica que " + NameUser  + " identificado con " + tipoIdentificacion + " " + documentoPacienteCompleto + " sufrio un accidente de tránsito el dia " + dia + " de " + mesInputAccidente + " " + annio +".";
+    ResultadoNombre.innerHTML = "<strong>" + NameUser  + "</strong> identificado con <strong>" + tipoIdentificacion + " " + documentoPacienteCompleto + "</strong> sufrio un accidente de tránsito el dia " + dia + " de " + mesInputAccidente + " " + annio +".";
 
     var ResultadoAccidente = document.getElementById("ResultadoAccidente");
     ResultadoAccidente.innerText = Parrafo1Final;
 
     var ResultadoAsegurador = document.getElementById("ResultadoAsegurador");
-    ResultadoAsegurador.innerText = asegurador;
+    ResultadoAsegurador.innerHTML = "<strong>" + asegurador;
 
     var ResultadoGasto = document.getElementById("ResultadoGasto");
     ResultadoGasto.innerText = "…………… $ " + gastoTotal;
@@ -99,10 +99,10 @@ function onclickSumarNombre(){
     ResultadoGasto2.innerText = gastoTotalReal;
 
     var ResultadoAdres = document.getElementById("ResultadoAdres");
-    ResultadoAdres.innerText = asegurador2;
+    ResultadoAdres.innerHTML = "<strong>" + asegurador2;
 
     var ResultadoCarta = document.getElementById("ResultadoCarta");
-    ResultadoCarta.innerText = "Esta constancia se realiza a solicitud del usuario y se firma en la ciudad de Medellín a los " + cartaDia + " días del mes de " + cartaMesAccidente + " de " + CartaAnnio;
+    ResultadoCarta.innerText = "Esta constancia se realiza a solicitud del usuario y se firma en la ciudad de Medellín a los " + cartaDia + " días del mes de " + cartaMesAccidente + " de " + CartaAnnio + ".";
 
     var ResultadoNota = document.getElementById("ResultadoNota");
     ResultadoNota.innerText = CualMotivoCarta;

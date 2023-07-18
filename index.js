@@ -93,7 +93,7 @@ function onclickSumarNombre(){
     ResultadoAsegurador.innerHTML = "<strong>" + asegurador;
 
     var ResultadoGasto = document.getElementById("ResultadoGasto");
-    ResultadoGasto.innerText = "…………… $ " + gastoTotal;
+    ResultadoGasto.innerText = "....... $ " + gastoTotal;
 
     var ResultadoGasto2 = document.getElementById("ResultadoGasto2");
     ResultadoGasto2.innerText = gastoTotalReal;
@@ -176,7 +176,7 @@ function onclickSumarNombre(){
 
     function mostrarTopeCarta(valor){
         if(valor>0){
-            return "…………… $ " + gastoTotal2;
+            return "....... $ " + gastoTotal2;
         }
         if(valor<=0){
             return "";

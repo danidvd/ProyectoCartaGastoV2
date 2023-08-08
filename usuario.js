@@ -17,10 +17,10 @@ var empleados = [
     correo:"catalinam.martinez@upb.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
     },
-    {nombre: "Diana Carolina Lopez Aristizabal",
-    cargo:"Tecnologo Administrativo en salud",
+    {nombre: "Jeniffer Pizarro Restrepo",
+    cargo:"Tecnico Administrativo en salud",
     ips:"Clinica Universitaria Bolivariana",
-    correo:"dianaca.lopez@upb.edu.co",
+    correo:"jeniffer.pizarro@upb.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
     },
     {nombre: "Daniel David Usuga",
@@ -71,7 +71,7 @@ console.log(empleadosFiltrados);
 var usuario1 ="Molly"
 var usuario2 ="Fernando"
 var usuario3 ="Catalina"
-var usuario4 ="Carolina"
+var usuario4 ="Jeniffer"
 var usuario5 ="Daniel"
 
 function mostrarNombreUsuario(usuario){
@@ -91,7 +91,7 @@ function mostrarNombreUsuario(usuario){
         return Catalina
     };
     if(usuario === usuario4){
-        return Carolina
+        return Jeniffer
     };
     if(usuario === usuario5){
         return Daniel
@@ -115,7 +115,7 @@ function mostrarNombreCargo(usuario){
         return Catalina
     };
     if(usuario === usuario4){
-        return Carolina
+        return Jeniffer
     };
     if(usuario === usuario5){
         return Daniel
@@ -139,7 +139,7 @@ function mostrarNombreCorreo(usuario){
         return Catalina
     };
     if(usuario === usuario4){
-        return Carolina
+        return Jeniffer
     };
     if(usuario === usuario5){
         return Daniel

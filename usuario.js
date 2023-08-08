@@ -78,7 +78,7 @@ function mostrarNombreUsuario(usuario){
     var Molly = nombreEmpleados[0];
     var Fernando = nombreEmpleados[1];
     var Catalina = nombreEmpleados[2];
-    var Carolina = nombreEmpleados[3];
+    var Jeniffer = nombreEmpleados[3];
     var Daniel = nombreEmpleados[4];
 
     if(usuario === usuario1){
@@ -102,7 +102,7 @@ function mostrarNombreCargo(usuario){
     var Molly = nombreCargo[0];
     var Fernando = nombreCargo[1];
     var Catalina = nombreCargo[2];
-    var Carolina = nombreCargo[3];
+    var Jeniffer = nombreCargo[3];
     var Daniel = nombreCargo[4];
 
     if(usuario === usuario1){
@@ -126,7 +126,7 @@ function mostrarNombreCorreo(usuario){
     var Molly = nombreCorreo[0];
     var Fernando = nombreCorreo[1];
     var Catalina = nombreCorreo[2];
-    var Carolina = nombreCorreo[3];
+    var Jeniffer = nombreCorreo[3];
     var Daniel = nombreCorreo[4];
 
     if(usuario === usuario1){

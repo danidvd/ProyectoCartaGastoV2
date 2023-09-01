@@ -84,7 +84,7 @@ function onclickSumarNombre(){
     // Se Muestran los cambios en la carta Parrafo1
 
     var ResultadoNombre = document.getElementById("ResultadoNombre");
-    ResultadoNombre.innerHTML = "<strong>" + NameUser  + "</strong> identificado con <strong>" + tipoIdentificacion + " " + documentoPacienteCompleto + "</strong> sufrio un accidente de tránsito el dia " + dia + " de " + mesInputAccidente + " " + annio +".";
+    ResultadoNombre.innerHTML = "<strong>" + NameUser  + "</strong> identificado con <strong>" + tipoIdentificacion + " " + documentoPacienteCompleto + "</strong> sufrió un accidente de tránsito el día " + dia + " de " + mesInputAccidente + " " + annio +".";
 
     var ResultadoAccidente = document.getElementById("ResultadoAccidente");
     ResultadoAccidente.innerText = Parrafo1Final;

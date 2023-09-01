@@ -1,31 +1,31 @@
 var empleados = [
     {nombre: "Ruth Molly Sepulveda Mejia",
-    cargo:"Tecnologo Administrativo en salud",
-    ips:"Clinica Universitaria Bolivariana",
+    cargo:"Tecnólogo Administrativo en salud",
+    ips:"Clínica Universitaria Bolivariana",
     correo:"ruth.sepulveda@upb.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
     },
     {nombre: "Luis Fernando Bohorquez Uribe",
-    cargo:"Tecnologo Administrativo en salud",
-    ips:"Clinica Universitaria Bolivariana",
+    cargo:"Tecnólogo Administrativo en salud",
+    ips:"Clínica Universitaria Bolivariana",
     correo:"luisf.bohorquez@upb.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
     },
     {nombre: "Catalina Martinez Betancur",
-    cargo:"Tecnologo Administrativo en salud",
-    ips:"Clinica Universitaria Bolivariana",
+    cargo:"Tecnólogo Administrativo en salud",
+    ips:"Clínica Universitaria Bolivariana",
     correo:"catalinam.martinez@upb.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
     },
     {nombre: "Jeniffer Pizarro Restrepo",
-    cargo:"Tecnico Administrativo en salud",
-    ips:"Clinica Universitaria Bolivariana",
+    cargo:"Técnico Administrativo en salud",
+    ips:"Clínica Universitaria Bolivariana",
     correo:"jeniffer.pizarro@upb.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
     },
     {nombre: "Daniel David Usuga",
-    cargo:"Tecnico Administrativo en salud",
-    ips:"Clinica Universitaria Bolivariana",
+    cargo:"Técnico Administrativo en salud",
+    ips:"Clínica Universitaria Bolivariana",
     correo:"daniel.usuga@upb.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
     },
@@ -146,7 +146,7 @@ function mostrarNombreCorreo(usuario){
     };
 };
 
-var motivo1 ="Cercania"
+var motivo1 ="Cercanía"
 var motivo2 ="Disponibilidad"
 var motivo3 ="Oportunidad"
 var motivo4 ="Tope (ambulatorio)"

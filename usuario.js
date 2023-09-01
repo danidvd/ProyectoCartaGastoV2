@@ -168,7 +168,7 @@ function mostrarMotivo(motivo){
         return "Paciente que supera tope de SOAT, se expide carta para gestión de servicios por parte de la EPS."
     };
     if(motivo === motivo5){
-        return "Paciente que supera tope de SOAT durante atención intrahospitalaria, se expide carta para gestión de servicios por parte de la EPS."
+        return "Paciente el cual durante la hospitalización y tratamiento quirúrgico superó el tope establecido por el SOAT y requiere seguir la atención y/o excedentes en su EPS."
     };
     if(motivo === motivo6){
         return "Paciente solicita corte de cuenta para trámites legales."

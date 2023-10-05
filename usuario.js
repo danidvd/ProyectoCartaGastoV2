@@ -35,6 +35,12 @@ var empleados = [
     correo:"silviae.betancur@upb.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
     },
+    {nombre: "Vanessa Viana Sáenz",
+    cargo:"Tecnólogo Administrativo en salud",
+    ips:"Clínica Universitaria Bolivariana",
+    correo:"vanessa.viana@upb.edu.co",
+    contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
+    },
 ];
 
 // Me trae nombre de Empleados
@@ -80,6 +86,7 @@ var usuario3 ="Catalina"
 var usuario4 ="Jeniffer"
 var usuario5 ="Daniel"
 var usuario6 ="Silvia"
+var usuario7 ="Vanessa"
 
 function mostrarNombreUsuario(usuario){
     var Molly = nombreEmpleados[0];
@@ -88,6 +95,7 @@ function mostrarNombreUsuario(usuario){
     var Jeniffer = nombreEmpleados[3];
     var Daniel = nombreEmpleados[4];
     var Silvia = nombreEmpleados[5];
+    var Vanessa = nombreEmpleados[6];
 
     if(usuario === usuario1){
         return Molly
@@ -106,6 +114,9 @@ function mostrarNombreUsuario(usuario){
     };
     if(usuario === usuario6){
         return Silvia
+    };
+    if(usuario === usuario7){
+    return Vanessa
     };
 };
 
@@ -116,6 +127,7 @@ function mostrarNombreCargo(usuario){
     var Jeniffer = nombreCargo[3];
     var Daniel = nombreCargo[4];
     var Silvia = nombreCargo[5];
+    var Vanessa = nombreCargo[6];
 
     if(usuario === usuario1){
         return Molly
@@ -134,6 +146,9 @@ function mostrarNombreCargo(usuario){
     };
     if(usuario === usuario6){
         return Silvia
+    };
+    if(usuario === usuario7){
+    return Vanessa
     };
 };
 
@@ -144,6 +159,7 @@ function mostrarNombreCorreo(usuario){
     var Jeniffer = nombreCorreo[3];
     var Daniel = nombreCorreo[4];
     var Silvia = nombreCorreo[5];
+    var Vanessa = nombreCorreo[6];
 
     if(usuario === usuario1){
         return Molly
@@ -162,6 +178,9 @@ function mostrarNombreCorreo(usuario){
     };
     if(usuario === usuario6){
         return Silvia
+    };
+    if(usuario === usuario7){
+        return Vanessa
     };
 };
 

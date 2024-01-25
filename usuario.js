@@ -1,8 +1,8 @@
 var empleados = [
-    {nombre: "Ruth Molly Sepulveda Mejia",
+    {nombre: "Sebastian Rivera Benitez",
     cargo:"Tecnólogo Administrativo en salud",
     ips:"Clínica Universitaria Bolivariana",
-    correo:"ruth.sepulveda@upb.edu.co",
+    correo:"sebastian.riverab@upb.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
     },
     {nombre: "Luis Fernando Bohorquez Uribe",
@@ -80,7 +80,7 @@ console.log(empleadosFiltrados);
 
 // Aqui van los datos del funcionario
 
-var usuario1 ="Molly"
+var usuario1 ="Sebastian"
 var usuario2 ="Fernando"
 var usuario3 ="Catalina"
 var usuario4 ="Jeniffer"
@@ -89,7 +89,7 @@ var usuario6 ="Silvia"
 var usuario7 ="Vanessa"
 
 function mostrarNombreUsuario(usuario){
-    var Molly = nombreEmpleados[0];
+    var Sebastian = nombreEmpleados[0];
     var Fernando = nombreEmpleados[1];
     var Catalina = nombreEmpleados[2];
     var Jeniffer = nombreEmpleados[3];
@@ -98,7 +98,7 @@ function mostrarNombreUsuario(usuario){
     var Vanessa = nombreEmpleados[6];
 
     if(usuario === usuario1){
-        return Molly
+        return Sebastian
     };
     if(usuario === usuario2){
         return Fernando
@@ -121,7 +121,7 @@ function mostrarNombreUsuario(usuario){
 };
 
 function mostrarNombreCargo(usuario){
-    var Molly = nombreCargo[0];
+    var Sebastian = nombreCargo[0];
     var Fernando = nombreCargo[1];
     var Catalina = nombreCargo[2];
     var Jeniffer = nombreCargo[3];
@@ -130,7 +130,7 @@ function mostrarNombreCargo(usuario){
     var Vanessa = nombreCargo[6];
 
     if(usuario === usuario1){
-        return Molly
+        return Sebastian
     };
     if(usuario === usuario2){
         return Fernando
@@ -153,7 +153,7 @@ function mostrarNombreCargo(usuario){
 };
 
 function mostrarNombreCorreo(usuario){
-    var Molly = nombreCorreo[0];
+    var Sebastian = nombreCorreo[0];
     var Fernando = nombreCorreo[1];
     var Catalina = nombreCorreo[2];
     var Jeniffer = nombreCorreo[3];
@@ -162,7 +162,7 @@ function mostrarNombreCorreo(usuario){
     var Vanessa = nombreCorreo[6];
 
     if(usuario === usuario1){
-        return Molly
+        return Sebastian
     };
     if(usuario === usuario2){
         return Fernando

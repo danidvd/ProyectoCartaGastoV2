@@ -385,6 +385,25 @@ section .fechaCarta .cartaDia{
     height: auto;
 }
 
+.bloque-gastos {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.fila-gasto {
+  display: flex;
+  justify-content: space-between; /* Pone el nombre a la izquierda y el costo enfrente a la derecha */
+  align-items: center;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.valor-gasto {
+  text-align: right;
+  white-space: nowrap; /* Evita que el signo $ y los números se partan en dos líneas */
+  margin-left: 15px;
+}
+
 footer img, .img-footer {
   width: 1000px;
   max-width: 100%;

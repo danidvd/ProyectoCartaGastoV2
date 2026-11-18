@@ -392,16 +392,22 @@ section .fechaCarta .cartaDia{
 
 .fila-gasto {
   display: flex;
-  justify-content: space-between; /* Pone el nombre a la izquierda y el costo enfrente a la derecha */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 6px;
+  margin: 10px 0;
+  font-size: 1.4rem;
+}
+
+.fila-gasto p, .fila-gasto strong {
+  font-size: 1.4rem;
 }
 
 .valor-gasto {
   text-align: right;
-  white-space: nowrap; /* Evita que el signo $ y los números se partan en dos líneas */
+  white-space: nowrap; 
   margin-left: 15px;
+    font-size: 1.4rem;
 }
 
 footer img, .img-footer {
@@ -432,7 +438,7 @@ footer img, .img-footer {
 
   main {
     width: 100% !important;
-    height: auto !important; /* Anula el height: 104rem que empujaba todo a 2 páginas */
+    height: auto !important; 
     padding: 0 !important;
   }
 

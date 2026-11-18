@@ -424,13 +424,22 @@ footer img, .img-footer {
     margin: 0 auto !important;
   }
 
-  footer, footer img, .img-footer {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-top: auto !important; /* Ancla la imagen del footer al final de la hoja */
-    page-break-before: avoid;
-    break-before: avoid;
-  }
+footer {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+footer img, .img-footer {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
 }
 
 

@@ -385,7 +385,10 @@ section .fechaCarta .cartaDia{
     height: auto;
 }
 
-
+.LogFooter {
+    height: 120px;
+    width: 1000px;
+}
 
 /* Impresion me bloquea la parte del input solo me imprime la carta */
 

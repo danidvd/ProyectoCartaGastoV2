@@ -385,7 +385,7 @@ section .fechaCarta .cartaDia{
     height: auto;
 }
 
-.LogFooter {
+img .LogFooter {
     height: 120px;
     width: 1000px;
 }

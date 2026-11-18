@@ -385,15 +385,37 @@ section .fechaCarta .cartaDia{
     height: auto;
 }
 
-img .LogFooter {
-    height: 120px;
-    width: 800px;
+footer img, .img-footer {
+  width: 1000px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto 0 auto;
 }
 
-/* Impresion me bloquea la parte del input solo me imprime la carta */
-
 @media print {
-#CartaGasto {display:none;}
+  @page {
+    size: letter portrait;
+    margin: 5mm 10mm;
+  }
+
+  #CartaGasto {
+    display: none;
+  }
+
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    zoom: 0.78; /* Encoge ligeramente la carta para que el footer suba a la hoja 1 */
+  }
+
+  footer, footer img, .img-footer {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 8px !important;
+    page-break-before: avoid;
+    break-before: avoid;
+  }
 }
 
 

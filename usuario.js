@@ -1,46 +1,46 @@
 var empleados = [
-    {nombre: "Sebastian Rivera Benitez",
-    cargo:"Tecnólogo Administrativo en salud",
-    ips:"Clínica Universitaria Bolivariana",
-    correo:"sebastian.riverab@upb.edu.co",
-    contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
+    {nombre: "Lency Lorena Arredondo Pimienta",
+    cargo:"Auxiliar administrativo en salud",
+    ips:"Fundación Clínica Universitaria Bolivariana",
+    correo:"lency.arredondop@fundacioncub.edu.co",
+    contacto:"Tel 4455900 ext. 1608"
     },
     {nombre: "Luis Fernando Bohorquez Uribe",
     cargo:"Tecnólogo Administrativo en salud",
-    ips:"Clínica Universitaria Bolivariana",
-    correo:"luisf.bohorquez@upb.edu.co",
+    ips:"Fundación Clínica Universitaria Bolivariana",
+    correo:"luisf.bohorquez@fundacioncub.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
     },
-    {nombre: "Luisa Fernanda Santamaria Castañeda",
+    {nombre: "Ruth Molly Sepulveda Mejia",
     cargo:"Tecnólogo Administrativo en salud",
-    ips:"Clínica Universitaria Bolivariana",
-    correo:"luisa.santamaria@upb.edu.co",
+    ips:"Fundación Clínica Universitaria Bolivariana",
+    correo:"ruth.sepuveda@fundacioncub.edu.co",
+    contacto:"Tel 4455900 ext. 1604"
+    },
+    {nombre: "Claudia Patricia Bedoya Munoz",
+    cargo:"Tecnólogo Administrativo en salud",
+    ips:"Fundación Clínica Universitaria Bolivariana",
+    correo:"claudia.bedoya@fundacioncub.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
     },
-    {nombre: "Jeniffer Pizarro Restrepo",
-    cargo:"Técnico Administrativo en salud",
-    ips:"Clínica Universitaria Bolivariana",
-    correo:"jeniffer.pizarro@upb.edu.co",
-    contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
-    },
-    {nombre: "Daniel David Usuga",
-    cargo:"Técnico Administrativo en salud",
-    ips:"Clínica Universitaria Bolivariana",
-    correo:"daniel.usuga@upb.edu.co",
-    contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
+    {nombre: "Ángel Gómez Taboada",
+    cargo:"Tecnólogo Administrativo en Salud",
+    ips:"Fundación Clínica Universitaria Bolivariana",
+    correo:"angel.gomezt@fundacioncub.edu.co",
+    contacto:"Tel 4455900 ext. 1609"
     },
     {nombre: "Silvia Elena Betancur Alvarez",
     cargo:"Tecnólogo Administrativo en salud",
-    ips:"Clínica Universitaria Bolivariana",
-    correo:"silviae.betancur@upb.edu.co",
+    ips:"Fundación Clínica Universitaria Bolivariana",
+    correo:"silviae.betancur@fundacioncub.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
     },
-    {nombre: "Vanessa Viana Sáenz",
+    /*{nombre: "Vanessa Viana Sáenz",
     cargo:"Tecnólogo Administrativo en salud",
-    ips:"Clínica Universitaria Bolivariana",
+    ips:"Fundación Clínica Universitaria Bolivariana",
     correo:"vanessa.viana@upb.edu.co",
     contacto:"Tel 4455900 ext. 1608 - 1609 - 1611"
-    },
+    },*/
 ];
 
 // Me trae nombre de Empleados
@@ -80,108 +80,108 @@ console.log(empleadosFiltrados);
 
 // Aqui van los datos del funcionario
 
-var usuario1 ="Sebastian"
+var usuario1 ="Lency"
 var usuario2 ="Fernando"
-var usuario3 ="Luisa"
-var usuario4 ="Jeniffer"
-var usuario5 ="Daniel"
+var usuario3 ="Molly"
+var usuario4 ="Claudia"
+var usuario5 ="Angel"
 var usuario6 ="Silvia"
-var usuario7 ="Vanessa"
+/*var usuario7 ="Vanessa"*/
 
 function mostrarNombreUsuario(usuario){
     var Sebastian = nombreEmpleados[0];
     var Fernando = nombreEmpleados[1];
-    var Luisa = nombreEmpleados[2];
-    var Jeniffer = nombreEmpleados[3];
-    var Daniel = nombreEmpleados[4];
+    var Molly = nombreEmpleados[2];
+    var Claudia = nombreEmpleados[3];
+    var Angel = nombreEmpleados[4];
     var Silvia = nombreEmpleados[5];
-    var Vanessa = nombreEmpleados[6];
+    /*var Vanessa = nombreEmpleados[6];*/
 
     if(usuario === usuario1){
-        return Sebastian
+        return Lency
     };
     if(usuario === usuario2){
         return Fernando
     };
     if(usuario === usuario3){
-        return Luisa
+        return Molly
     };
     if(usuario === usuario4){
-        return Jeniffer
+        return Claudia
     };
     if(usuario === usuario5){
-        return Daniel
+        return Angel
     };
     if(usuario === usuario6){
         return Silvia
     };
-    if(usuario === usuario7){
+    /*if(usuario === usuario7){
     return Vanessa
-    };
+    };*/
 };
 
 function mostrarNombreCargo(usuario){
-    var Sebastian = nombreCargo[0];
+    var Lency = nombreCargo[0];
     var Fernando = nombreCargo[1];
-    var Luisa = nombreCargo[2];
-    var Jeniffer = nombreCargo[3];
-    var Daniel = nombreCargo[4];
+    var Molly = nombreCargo[2];
+    var Claudia = nombreCargo[3];
+    var Angel = nombreCargo[4];
     var Silvia = nombreCargo[5];
-    var Vanessa = nombreCargo[6];
+    /*var Vanessa = nombreCargo[6];*/
 
     if(usuario === usuario1){
-        return Sebastian
+        return Lency
     };
     if(usuario === usuario2){
         return Fernando
     };
     if(usuario === usuario3){
-        return Luisa
+        return Molly
     };
     if(usuario === usuario4){
-        return Jeniffer
+        return Claudia
     };
     if(usuario === usuario5){
-        return Daniel
+        return Angel
     };
     if(usuario === usuario6){
         return Silvia
     };
-    if(usuario === usuario7){
+    /*if(usuario === usuario7){
     return Vanessa
-    };
+    };*/
 };
 
 function mostrarNombreCorreo(usuario){
-    var Sebastian = nombreCorreo[0];
+    var Lency = nombreCorreo[0];
     var Fernando = nombreCorreo[1];
-    var Luisa = nombreCorreo[2];
-    var Jeniffer = nombreCorreo[3];
-    var Daniel = nombreCorreo[4];
+    var Molly = nombreCorreo[2];
+    var Claudia = nombreCorreo[3];
+    var Angel = nombreCorreo[4];
     var Silvia = nombreCorreo[5];
-    var Vanessa = nombreCorreo[6];
+    /*var Vanessa = nombreCorreo[6];*/
 
     if(usuario === usuario1){
-        return Sebastian
+        return Lency
     };
     if(usuario === usuario2){
         return Fernando
     };
     if(usuario === usuario3){
-        return Luisa
+        return Molly
     };
     if(usuario === usuario4){
-        return Jeniffer
+        return Claudia
     };
     if(usuario === usuario5){
-        return Daniel
+        return Angel
     };
     if(usuario === usuario6){
         return Silvia
     };
-    if(usuario === usuario7){
+    /*if(usuario === usuario7){
         return Vanessa
-    };
+    };*/
 };
 
 var motivo1 ="Cercanía"

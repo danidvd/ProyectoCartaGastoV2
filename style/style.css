@@ -427,10 +427,7 @@ footer img, .img-footer {
     min-height: 98vh !important; 
     margin: 0 !important;
     padding: 0 !important;
-    zoom: 0.94;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
+    zoom: 1.15;
   }
 
   body > div, main, section, .carta, #carta {
@@ -449,15 +446,12 @@ footer {
   left: 0 !important;
   right: 0 !important;
   width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 footer img, .img-footer {
   width: 100% !important;
   max-width: 100% !important;
   display: block !important;
-  margin: 0 auto !important;
 }
 }
 

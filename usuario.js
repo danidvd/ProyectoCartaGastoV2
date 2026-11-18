@@ -89,7 +89,7 @@ var usuario6 ="Silvia"
 /*var usuario7 ="Vanessa"*/
 
 function mostrarNombreUsuario(usuario){
-    var Sebastian = nombreEmpleados[0];
+    var Lency = nombreEmpleados[0];
     var Fernando = nombreEmpleados[1];
     var Molly = nombreEmpleados[2];
     var Claudia = nombreEmpleados[3];

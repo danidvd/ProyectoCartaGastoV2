@@ -396,7 +396,7 @@ footer img, .img-footer {
 @media print {
   @page {
     size: letter portrait;
-    margin: 5mm 10mm;
+    margin: 8mm 10mm;
   }
 
   #CartaGasto {
@@ -404,15 +404,30 @@ footer img, .img-footer {
   }
 
   html, body {
+    width: 100% !important;
+    min-height: 98vh !important; 
     margin: 0 !important;
     padding: 0 !important;
-    zoom: 0.78; /* Encoge ligeramente la carta para que el footer suba a la hoja 1 */
+    zoom: 0.94;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+
+  body > div, main, section, .carta, #carta {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto !important;
   }
 
   footer, footer img, .img-footer {
     width: 100% !important;
     max-width: 100% !important;
-    margin-top: 8px !important;
+    margin-top: auto !important; /* Ancla la imagen del footer al final de la hoja */
     page-break-before: avoid;
     break-before: avoid;
   }

@@ -439,7 +439,7 @@ footer img, .img-footer {
   main {
     width: 100% !important;
     height: auto !important; 
-    padding: 0 !important;
+    padding: 0 0 110px 0 !important;
   }
 
   footer {

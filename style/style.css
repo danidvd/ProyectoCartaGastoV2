@@ -396,18 +396,18 @@ section .fechaCarta .cartaDia{
   align-items: center;
   width: 100%;
   margin: 10px 0;
-  font-size: 1.4rem;
+  font-size: 1.9rem;
 }
 
 .fila-gasto p, .fila-gasto strong {
-  font-size: 1.4rem;
+  font-size: 1.9rem;
 }
 
 .valor-gasto {
   text-align: right;
   white-space: nowrap; 
   margin-left: 15px;
-    font-size: 1.4rem;
+    font-size: 1.9rem;
 }
 
 footer img, .img-footer {

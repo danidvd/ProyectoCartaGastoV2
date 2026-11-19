@@ -62,10 +62,6 @@ main .main-input-gastos {
     display: flex;
 }
 
-/*main .main-input-gastos p {
-    width: 300rem;
-}*/
-
 main .main-input-gastos2 {
     width: 100%;
     margin-bottom: 35px;
@@ -123,7 +119,6 @@ h1{
     padding-left: 15px;
 }
 
-
 .titulo2 {
     background-color: #081067;
     color: white;
@@ -154,9 +149,6 @@ button {
     margin-right: 15px;
     box-shadow: 0 1px 1px #000001;
     cursor: pointer;
-}
-
-button {
     background-color: powderblue;
     transition: background-color .5s;
     text-align: center;
@@ -249,7 +241,7 @@ label{
     height: 2rem;
 }
 
-/* Fecha Ingreso*/
+/* Fecha Ingreso */
 
 .fechaIngreso {
     display: flex;
@@ -294,8 +286,6 @@ label{
     height: 2rem;
 }
 
-
-
 .fechaCarta input {
     display: inline-block;
 }
@@ -334,7 +324,6 @@ form .fechaCarta{
     width: 100%;
     height: 3rem;
     vertical-align: text;
-    display: inline-block;
     justify-content: center;
     justify-items: center;
 }
@@ -372,88 +361,133 @@ section .fechaCarta .cartaDia{
     display: flex;
 }
 
-/*footer {
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    top: inherit;
-}
-*/
-
 .funcionario .funcionario-input{
     width: 28rem;
     height: auto;
 }
 
 .bloque-gastos {
-  width: 100%;
-  margin: 10px 0;
+    width: 78%;
+    margin: 10px 0;
 }
 
 .fila-gasto {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 10px 0;
-  font-size: 1.9rem;
-}
-
-.fila-gasto p, .fila-gasto strong {
-  font-size: 1.9rem;
-}
-
-.valor-gasto {
-  text-align: right;
-  white-space: nowrap; 
-  margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
     font-size: 1.9rem;
 }
 
-footer img, .img-footer {
-  width: 1000px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 15px auto 0 auto;
+.fila-gasto p, .fila-gasto strong {
+    font-size: 1.9rem;
 }
 
+.valor-gasto {
+    text-align: right;
+    white-space: nowrap; 
+    margin-left: 15px;
+    font-size: 1.9rem;
+}
+
+/* Estilos del Footer en pantalla */
+
+footer figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+footer img, .logFooter, .img-footer {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 15px auto 0 auto;
+}
+
+/* Estilos exclusivos para impresión */
+
 @media print {
-  @page {
-    size: letter portrait;
-    margin: 10mm;
-  }
+    @page {
+        size: letter portrait;
+        margin: 10mm;
+    }
 
-  #CartaGasto {
-    display: none !important;
-  }
+    #CartaGasto {
+        display: none !important;
+    }
 
-  html, body {
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    zoom: 1;
-  }
+    html {
+        font-size: 62.5% !important;
+        height: 100% !important;
+    }
 
-  main {
-    width: 100% !important;
-    height: auto !important; 
-    padding: 0 0 110px 0 !important;
-  }
+    body {
+        width: 100% !important;
+        height: 100% !important; /* Ocupa el 100% del alto imprimible de la hoja Carta */
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important; /* Empuja el footer exactamente al borde inferior */
+    }
 
-  footer {
-    position: fixed !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-  }
+    main {
+        width: 100% !important;
+        flex: 1 !important; /* Hace que el cuerpo de la carta se expanda para llenar el alto */
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-around !important; /* Distribuye los párrafos uniformemente de arriba a abajo */
+        height: auto !important;
+        padding: 10px 0 !important;
+        margin: 0 !important;
+    }
 
-  footer img, .img-footer {
-    width: 100% !important;
-    max-width: 100% !important;
-    display: block !important;
-  }
+    /* Tamaño de letra cómodo y buen interlineado */
+    main section .Parrafo1,
+    main .main-input-name,
+    main .main-input-accidente,
+    main .main-input-gastos,
+    main .main-input-gastos2,
+    main .main-input-nota,
+    main .main-input-ips,
+    main .main-input-carta,
+    main .main-input-funcionario {
+        height: auto !important;
+        min-height: 0 !important;
+        margin-bottom: 15px !important;
+        font-size: 2.3rem !important;
+        line-height: 1.4 !important;
+    }
+
+    .fila-gasto, .fila-gasto p, .fila-gasto strong, .valor-gasto {
+        font-size: 2.2rem !important;
+    }
+
+    footer {
+        position: relative !important;
+        width: 100% !important;
+        margin-top: auto !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    footer figure {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    footer img, .logFooter, .img-footer {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        display: block !important;
+        margin: 0 !important;
+    }
 }
 
 
